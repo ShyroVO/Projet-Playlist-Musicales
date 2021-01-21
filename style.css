@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Red D: #D90429 - Red: #EF233C - Grey: #EDF2F4 - Grey D: #8D99AE - Black: #2B2D42 */
+
+body {
+    font-size: 62.5%;
+    background: #EDF2F4;
+}
+
+header {
+    background: #D90429;
+    color: #EDF2F4;
+    height: 6rem;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem;
+}
+
+footer {
+    background: #2B2D42;
+    color: #EDF2F4;
+    text-align: right;
+    padding: 1rem;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+#page {
+    width: 100%;
+    height: auto;
+    border: solid #D90429 2px;
+}
