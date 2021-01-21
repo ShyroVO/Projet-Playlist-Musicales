@@ -34,8 +34,27 @@ footer {
     bottom: 0;
 }
 
+#marge {
+    height: 6rem;
+    width: 100%;
+}
+
 #page {
     width: 100%;
     height: auto;
-    border: solid #D90429 2px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#lecteur {
+    text-align: center;
+    width: 100%;
+}
+
+#action, #playlist, #liste {
+    width: 33.33%;
+    border: solid #8D99AE 1px;
+    min-height: 10rem;
 }
