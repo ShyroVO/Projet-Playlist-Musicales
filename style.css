@@ -17,7 +17,6 @@ header {
     color: #EDF2F4;
     height: 6rem;
     font-size: 1.5rem;
-    text-align: center;
     position: fixed;
     top: 0;
     padding: 1rem;
@@ -38,6 +37,10 @@ header, footer, #page, #lecteur, #marge1, #marge2 {
     width: 100%;
 }
 
+header, #lecteur, #action, #playlist, #liste {
+text-align: center;
+}
+
 #marge1 {
     height: 6rem;
 }
@@ -55,7 +58,6 @@ header, footer, #page, #lecteur, #marge1, #marge2 {
 }
 
 #lecteur {
-    text-align: center;
     height: 100%;
     margin-bottom: 0.3rem;
 }
@@ -68,7 +70,6 @@ header, footer, #page, #lecteur, #marge1, #marge2 {
 #action, #playlist, #liste {
     width: 33.33%;
     min-height: 10rem;
-    text-align: center;
 }
 
 #playlist {
@@ -76,17 +77,22 @@ header, footer, #page, #lecteur, #marge1, #marge2 {
     border-left: solid #2B2D42 1px;
 }
 
-#action button {
+#action button, #playlist div, #liste div {
+    min-height: 2rem;
     width: 90%;
     margin-bottom: 0.3rem;
     padding: 0.3rem;
 }
 
-#newPlaylist, #addMusic {
+#playlist div, #liste div {
+    width: 100%;
+}
+
+#newPlaylist, #addMusic, #playlist div, #liste div {
     border: solid #8D99AE 1px;
 }
 
-#newPlaylist:hover, #addMusic:hover {
+#newPlaylist:hover, #addMusic:hover, #playlist div:hover, #liste div:hover {
     border: solid #2B2D42 1px;
 }
 
