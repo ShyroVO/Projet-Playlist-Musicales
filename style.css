@@ -16,32 +16,37 @@ header {
     background: #D90429;
     color: #EDF2F4;
     height: 6rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     position: fixed;
     top: 0;
-    width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 footer {
     background: #2B2D42;
+    font-size: 1rem;
     color: #EDF2F4;
     text-align: right;
     padding: 1rem;
     height: 3rem;
-    width: 100%;
     position: fixed;
     bottom: 0;
 }
 
-#marge {
-    height: 6rem;
+header, footer, #page, #lecteur, #marge1, #marge2 {
     width: 100%;
 }
 
+#marge1 {
+    height: 6rem;
+}
+
+#marge2 {
+    height: 3rem;
+}
+
 #page {
-    width: 100%;
     height: auto;
     padding: 1rem;
     display: flex;
@@ -51,11 +56,45 @@ footer {
 
 #lecteur {
     text-align: center;
-    width: 100%;
+    height: 100%;
+    margin-bottom: 0.3rem;
+}
+
+#lecteur iframe {
+    width: 560px;
+    height: 315px;
 }
 
 #action, #playlist, #liste {
     width: 33.33%;
-    border: solid #8D99AE 1px;
     min-height: 10rem;
+    text-align: center;
+}
+
+#playlist {
+    border-right: solid #2B2D42 1px;
+    border-left: solid #2B2D42 1px;
+}
+
+#action button {
+    width: 90%;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+}
+
+#newPlaylist, #addMusic {
+    border: solid #8D99AE 1px;
+}
+
+#newPlaylist:hover, #addMusic:hover {
+    border: solid #2B2D42 1px;
+}
+
+#delMusic, #delPlaylist {
+    border: solid #D90429 2px;
+}
+
+#delMusic:hover, #delPlaylist:hover {
+    background: #D90429;
+    color: #EDF2F4;
 }
