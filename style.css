@@ -84,22 +84,22 @@ text-align: center;
     border-left: solid #2B2D42 1px;
 }
 
-#action button, #playlist div, #liste div {
+#action button, #playlist button, #liste button {
     min-height: 2rem;
     width: 90%;
     margin-bottom: 0.3rem;
     padding: 0.3rem;
 }
 
-#playlist div, #liste div {
+#playlist button, #liste button {
     width: 100%;
 }
 
-#newPlaylist, #addMusic, #playlist div, #liste div {
+#newPlaylist, #addMusic, #playlist button, #liste button {
     border: solid #8D99AE 1px;
 }
 
-#newPlaylist:hover, #addMusic:hover, #playlist div:hover, #liste div:hover {
+#newPlaylist:hover, #addMusic:hover, #playlist button:hover, #liste button:hover {
     border: solid #2B2D42 1px;
 }
 

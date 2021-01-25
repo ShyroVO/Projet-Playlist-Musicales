@@ -9,14 +9,19 @@ let playlist = $('#playlist');
 let liste = $('#liste');
 
 // add playlist
+np = true;
 newPlaylist.click( function (){
-    popUp();
+    if (np === true){
+        np = false;
+        popUp();
+    }
 })
 
 // pop Up
 function popUp (){
     $('#page').append('<div id="popUp"></div>');
     $('#popUp').css({
+        "visibility" : "visible",
         "index" : "1",
         "position" : "absolute",
         "text-align" : "center",
@@ -25,8 +30,13 @@ function popUp (){
         "height" : "315px",
         "background-color" : "#8D99AE",
     }).append('<input type="text" id="playlistName"><button id="addPlaylistName">Add Playlist</button>');
+
+    // create new playlist
+    $('#addPlaylistName').click( function (){
+        $('#playlist').append('<button>' + $("#playlistName").val() + '</button>')
+        $('#popUp').css("visibility", "hidden").html("");
+
+        np = true;
+    })
 }
 
-$('#addPlaylistName').click( function (){
-    $('#popUp').css({"visibility": "hidden"});
-})
